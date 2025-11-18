@@ -1,0 +1,278 @@
+/* -----------------------------------------------
+   Estilos Gerais: Definem a aparência global do site
+------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page {
+  background-color: #f9fafb; /* Cor de fundo da página */
+  color: #1f2937; /* Cor do texto principal */
+  font-family: sans-serif; /* Define a fonte padrão */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Garante que a página ocupe toda a altura da tela */
+}
+
+/* Container principal que centraliza o conteúdo */
+.container {
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 1rem; /* Adiciona um espaçamento nas laterais */
+}
+
+/* Estilo para centralizar texto */
+.text-center {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Seções do site (como as diferentes áreas da página) */
+.section {
+  padding: 5rem 1rem; /* Espaçamento interno (padding) */
+}
+
+/* Estilo para uma seção com fundo branco */
+.section.bg-white {
+  background-color: #ffffff; /* Cor de fundo branca */
+}
+
+/* Título de cada seção */
+.section-title {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 3rem; /* Espaçamento abaixo do título */
+}
+
+/* -----------------------------------------------
+   Estilos para os botões
+------------------------------------------------ */
+
+.btn {
+  font-weight: bold; /* Texto do botão em negrito */
+  padding: 0.75rem 2rem; /* Tamanho do botão */
+  border-radius: 9999px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado de links */
+  display: inline-block; /* Faz o botão se comportar como um bloco */
+  transition: background-color 0.3s ease; /* Animação suave para a cor do fundo */
+  border: none; /* Remove a borda do botão */
+  margin: 10px 0px; /* Espaçamento superior e inferior */
+  cursor: pointer; /* Mostra o cursor como uma mãozinha */
+}
+
+/* Estilo do botão principal (ex: Botão de "Comprar") */
+.btn.btn-primary {
+  background-color: #ec4899; /* Cor de fundo (rosa) */
+  color: #ffffff; /* Cor do texto (branco) */
+}
+
+/* Efeito quando o botão principal é passado o mouse (hover) */
+.btn.btn-primary:hover {
+  background-color: #db2777; /* Cor de fundo (rosa mais escuro) */
+}
+
+/* Estilo para quando o botão está desabilitado */
+.btn:disabled {
+  background-color: #9ca3af; /* Cor de fundo para botões desabilitados (cinza claro) */
+  cursor: not-allowed; /* Mostra o cursor como uma proibição */
+}
+
+/* -----------------------------------------------
+   Estilos para a seção de banner (imagem de fundo grande)
+------------------------------------------------ */
+
+.banner {
+  position: relative;
+  height: 100vh; /* A altura do banner ocupa toda a tela */
+  background-image: url('https://www.yahire.com/blogs/wp-content/uploads/2016/07/planning-children-party-budget.jpg'); /* Coloque a URL da imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem de fundo */
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  text-align: center; /* Centraliza o texto dentro do banner */
+  color: #ffffff; /* Cor do texto no banner (branco) */
+}
+
+/* Sobreposição escura sobre a imagem */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.63); /* Filtro escuro para melhorar a leitura */
+}
+
+/* Conteúdo do banner */
+.banner-content {
+  position: relative;
+  z-index: 10; /* Garante que o conteúdo fique sobre a sobreposição */
+}
+
+.banner-content h1 {
+  font-size: 3.5rem; /* Tamanho do título */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 1rem; /* Espaçamento abaixo do título */
+}
+
+.banner-content p {
+  font-size: 1.5rem; /* Tamanho do subtítulo */
+  margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
+}
+
+/* -----------------------------------------------
+   Estilos para a seção de temas
+------------------------------------------------ */
+
+.theme-category {
+  margin-bottom: 4rem; /* Espaçamento abaixo da seção de temas */
+}
+
+/* Título da categoria de temas */
+.category-title {
+  font-size: 2rem; /* Tamanho do título */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 2rem; /* Espaçamento abaixo do título */
+  color: #ec4899; /* Cor do título (rosa) */
+  text-align: center; /* Centraliza o título */
+}
+
+/* Grid para exibir os temas em 3 colunas */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 2.5rem; /* Espaçamento entre os itens */
+}
+
+/* Cartões de cada tema */
+.theme-card {
+  background-color: #ffffff; /* Cor de fundo branca */
+  border-radius: 0.5rem; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra suave */
+  overflow: hidden; /* Garante que nada "saia" do cartão */
+  text-align: left; /* Alinha o texto à esquerda */
+  transition: all .3s ease-in-out;
+}
+
+.theme-card:hover {
+  scale: 1.05;
+}
+
+.theme-card img {
+  width: 100%; /* A imagem ocupa toda a largura do cartão */
+  height: auto; /* A altura se ajusta automaticamente */
+  min-height: 200px; /* Define uma altura mínima para a imagem */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  object-fit: contain; /* Ajusta a imagem sem distorções */
+  background-color: #f8f9fa; /* Cor de fundo para a área da imagem */
+}
+
+/* Conteúdo dentro do cartão de tema */
+.card-content {
+  padding: 1.5rem; /* Espaçamento interno */
+}
+
+.card-content h3 {
+  font-size: 1.5rem; /* Tamanho do título dentro do cartão */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+}
+
+.card-content h4 {
+  font-size: 1.25rem; /* Tamanho do subtítulo */
+  font-weight: bold; /* Subtítulo em negrito */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo do subtítulo */
+}
+
+.card-content p {
+  color: #4b5563; /* Cor do texto (cinza claro) */
+}
+
+/* -----------------------------------------------
+   Estilos para a seção "Como funciona"
+------------------------------------------------ */
+
+.how-it-works-steps {
+  display: flex;
+  justify-content: center; /* Alinha os passos horizontalmente */
+  gap: 3rem; /* Espaçamento entre os passos */
+}
+
+/* Passos individuais */
+.step {
+  max-width: 20rem; /* Largura máxima para cada passo */
+}
+
+/* Número do passo */
+.step-number {
+  height: 4rem;
+  width: 4rem;
+  background-color: #ec4899; /* Cor de fundo do número (rosa) */
+  color: #ffffff; /* Cor do número (branco) */
+  border-radius: 50%; /* Torna o número redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; /* Tamanho do número */
+  font-weight: bold; /* Número em negrito */
+  margin: 0 auto 1rem; /* Centraliza e espaça o número */
+}
+
+/* Título do passo */
+.step h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Descrição do passo */
+.step p {
+  color: #4b5563; /* Cor do texto (cinza claro) */
+}
+
+/* -----------------------------------------------
+   Responsividade: Ajustes para telas menores
+------------------------------------------------ */
+
+@media (max-width: 1024px) {
+  .themes-grid {
+    grid-template-columns: repeat(2, 1fr); /* Exibe 2 colunas em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5rem; /* Diminui o tamanho do título no banner */
+  }
+
+  .banner p {
+    font-size: 1.25rem; /* Diminui o tamanho do subtítulo no banner */
+  }
+
+  .themes-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* Exibe 1 coluna para os temas e depoimentos */
+  }
+
+  .how-it-works-steps {
+    flex-direction: column; /* Exibe os passos em coluna */
+    align-items: center; /* Centraliza os passos */
+  }
+}
+
+hr {
+  margin: 10px 0;
+}
