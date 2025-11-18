@@ -96,7 +96,7 @@ html {
 .banner {
   position: relative;
   height: 100vh; /* A altura do banner ocupa toda a tela */
-  background-image: url('https://www.yahire.com/blogs/wp-content/uploads/2016/07/planning-children-party-budget.jpg'); /* Coloque a URL da imagem de fundo */
+  background-image: url('images/festa-criancas'); /* Coloque a URL da imagem de fundo */
   background-size: cover; /* Faz a imagem cobrir toda a área */
   background-position: center; /* Centraliza a imagem de fundo */
   display: flex;
@@ -276,3 +276,4 @@ html {
 hr {
   margin: 10px 0;
 }
+
